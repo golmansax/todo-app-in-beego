@@ -29,6 +29,11 @@
 			"Rev": "88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a"
 		},
 		{
+			"ImportPath": "github.com/astaxie/beego/orm",
+			"Comment": "v1.6.1-5-g88c5dfa",
+			"Rev": "88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a"
+		},
+		{
 			"ImportPath": "github.com/astaxie/beego/session",
 			"Comment": "v1.6.1-5-g88c5dfa",
 			"Rev": "88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a"
@@ -42,6 +47,11 @@
 			"ImportPath": "github.com/astaxie/beego/utils",
 			"Comment": "v1.6.1-5-g88c5dfa",
 			"Rev": "88c5dfa6ead42e624c2e7d9e04eab6cb2d07412a"
+		},
+		{
+			"ImportPath": "github.com/mattn/go-sqlite3",
+			"Comment": "v1.1.0-69-g38ee283",
+			"Rev": "38ee283dabf11c9cbdb968eebd79b1fa7acbabe6"
 		}
 	]
 }

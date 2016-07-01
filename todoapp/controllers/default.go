@@ -2,6 +2,8 @@ package controllers
 
 import (
 	"github.com/astaxie/beego"
+	"github.com/astaxie/beego/orm"
+	"github.com/golmansax/todo-app-in-beego/todoapp/models"
 )
 
 type MainController struct {
@@ -9,7 +11,12 @@ type MainController struct {
 }
 
 func (c *MainController) Get() {
-	c.Data["Website"] = "beego.me"
-	c.Data["Email"] = "astaxie@gmail.com"
+	o := orm.NewOrm()
+	o.Using("default")
+
+	var todos []*models.Todo
+	o.QueryTable("todo").All(&todos)
+
+	c.Data["todos"] = todos
 	c.TplName = "index.tpl"
 }
