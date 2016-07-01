@@ -6,5 +6,7 @@ import (
 )
 
 func init() {
-	beego.Router("/", &controllers.MainController{})
+	beego.Router("/", &controllers.TodoController{}, "get:List")
+	beego.Router("/new-todo", &controllers.TodoController{}, "get:New")
+	beego.Router("/create-todo", &controllers.TodoController{}, "post:Create")
 }
